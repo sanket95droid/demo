@@ -1,6 +1,6 @@
 import {ReactNode} from 'react'
 
-export const maxWidthWrapper = ({
+export const MaxWidthWrapper = ({
     className,
     children
 } : {
