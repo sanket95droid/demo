@@ -12,10 +12,13 @@ const Navbar = () => {
                     <Link href="/" className='flex font-semibold z-40 text-lg'>
                         <span>InsightPDF</span>
                     </Link>
+                    <div className="hidden sm:flex items-center">
+
+                    </div>
                 </div>
             </MaxWidthWrapper>
         </nav>
     );
-};
+};  
 
 export default Navbar;
