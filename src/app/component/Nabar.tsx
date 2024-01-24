@@ -22,14 +22,12 @@ const Navbar = () => {
                         }),"hover:bg-green-400 hover:text-white text-md duration-300 mr-2")}>Pricing</Link>
 
                         <LoginLink 
-                            href="/"
                             className={cn(buttonVariants({
                                 variant: "ghost",
                                 size: "sm"
                         }), "hover:bg-green-400 hover:text-white text-md durantion-300 mr-2")}>Log In</LoginLink>
 
                         <RegisterLink 
-                            href="/"
                             className={cn(buttonVariants({
                                 size: "sm"
                         }), "hover:bg-green-400 hover:text-white text-md duration-300")}>Sign Up</RegisterLink>
