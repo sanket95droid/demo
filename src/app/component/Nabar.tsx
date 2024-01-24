@@ -3,6 +3,7 @@ import {KeyRound } from 'lucide-react';
 import Link from 'next/link';
 import cn from '../lib/utils';
 import { MaxWidthWrapper } from './MaxWidthWrapper';
+import { LoginLink, RegisterLink } from '@kinde-oss/kinde-auth-nextjs/server';
 
 const Navbar = () => {
     return (
@@ -12,8 +13,26 @@ const Navbar = () => {
                     <Link href="/" className='flex font-semibold z-40 text-lg'>
                         <span>InsightPDF</span>
                     </Link>
-                    <div className="hidden sm:flex items-center">
+                    <div className="hidden sm:flex items-center justify-end">
+                        <Link 
+                            href="/pricing" 
+                            className={cn(buttonVariants({
+                                variant: "ghost",
+                                size: "sm"
+                        }),"hover:bg-green-400 hover:text-white text-md duration-300 mr-2")}>Pricing</Link>
 
+                        <LoginLink 
+                            href="/"
+                            className={cn(buttonVariants({
+                                variant: "ghost",
+                                size: "sm"
+                        }), "hover:bg-green-400 hover:text-white text-md durantion-300 mr-2")}>Log In</LoginLink>
+
+                        <RegisterLink 
+                            href="/"
+                            className={cn(buttonVariants({
+                                size: "sm"
+                        }), "hover:bg-green-400 hover:text-white text-md duration-300")}>Sign Up</RegisterLink>
                     </div>
                 </div>
             </MaxWidthWrapper>

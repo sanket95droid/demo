@@ -17,8 +17,8 @@ export default function Home() {
       PDFs made simple: Chat your way through complex documents with our AI companion, turning every page into a friendly conversation.
       </p>
         <div className="flex flex-row">
-        <Link href='/dashboard' className={cn(buttonVariants(), "mt-5 bg-green-500 text-white")} target='_blank'>Get Started <ArrowRight className="ml-2 h-5 w-5"/></Link>
-        <Link href='/dashboard' className={cn(buttonVariants(), "mt-5 bg-green-500 text-white ml-2")} target='_blank'>See how it works <PlayCircle  className="ml-2 h-5 w-5 animate-bounce"/></Link>
+        <Link href='/dashboard' className={cn(buttonVariants(), "mt-5 bg-green-500 text-white duration-300")} target='_blank'>Get Started <ArrowRight className="ml-2 h-5 w-5"/></Link>
+        <Link href='/dashboard' className={cn(buttonVariants(), "mt-5 bg-green-500 text-white ml-2 duration-300")} target='_blank'>See how it works <PlayCircle  className="ml-2 h-5 w-5 animate-bounce"/></Link>
         </div>
     </MaxWidthWrapper>
 
