@@ -10,7 +10,6 @@ export const appRouter = router({
     if (!user)
       throw new TRPCError({code : 'UNAUTHORIZED'})
 
-
     return {success: true}
   })
 });
