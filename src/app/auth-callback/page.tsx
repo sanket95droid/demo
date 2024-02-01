@@ -23,6 +23,7 @@ const Page = () => {
     },
     onError: (err) => {
       console.log(err);
+      
       if (err.data?.code === "UNAUTHORIZED") {
         retry.current = retry.current + 1;
         if (retry.current <= maxRetryCount) {
